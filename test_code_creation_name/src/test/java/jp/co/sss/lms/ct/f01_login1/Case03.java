@@ -35,7 +35,7 @@ public class Case03 {
 	@Order(1)
 	@DisplayName("テスト01 トップページURLでアクセス")
 	void test01() {
-		webDriver.get("http://localhost:8080/lms/");
+		goTo("http://localhost:8080/lms/");
 		getEvidence(new Object(){});
 	}
 
@@ -43,7 +43,7 @@ public class Case03 {
 	@Order(2)
 	@DisplayName("テスト02 初回ログイン済みの受講生ユーザーでログイン")
 	void test02() {
-		// TODO ここに追加
+		
 	}
 
 }
