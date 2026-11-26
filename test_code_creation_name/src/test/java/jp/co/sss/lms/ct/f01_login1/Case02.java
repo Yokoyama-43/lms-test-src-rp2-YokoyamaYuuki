@@ -47,7 +47,6 @@ public class Case02 {
 	@Order(2)
 	@DisplayName("テスト02 DBに登録されていないユーザーでログイン")
 	void test02() {
-		goTo("http://localhost:8080/lms/");
 		WebElement loginId = webDriver.findElement(By.name("loginId"));
 		loginId.sendKeys("間違い太郎");
 		WebElement loginPass = webDriver.findElement(By.name("password"));
