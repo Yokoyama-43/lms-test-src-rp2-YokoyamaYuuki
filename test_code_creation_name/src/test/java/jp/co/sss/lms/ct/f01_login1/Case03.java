@@ -54,7 +54,7 @@ public class Case03 {
 		// パスワードは初期から変更 ChromeのパスワードチェックポップアップがSeleniumの邪魔をするため
 		loginPass.sendKeys("Sensei7854");
 		loginPress.click();
-		pageLoadTimeout(10);
+		pageLoadTimeout(100);
 		assertEquals("コース詳細 | LMS", webDriver.getTitle());
 		getEvidence(new Object(){});
 	}

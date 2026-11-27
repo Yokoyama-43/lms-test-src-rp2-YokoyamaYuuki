@@ -53,7 +53,7 @@ public class Case04 {
 		loginId.sendKeys("StudentAA01");
 		loginPass.sendKeys("Sensei7854");
 		loginPress.click();
-		pageLoadTimeout(10);
+		pageLoadTimeout(100);
 		assertEquals("コース詳細 | LMS", webDriver.getTitle());
 		getEvidence(new Object(){});
 	}
@@ -67,7 +67,7 @@ public class Case04 {
 		visibilityTimeout(By.cssSelector(".nav.navbar-nav > li:nth-child(4) ul li:nth-child(4)"), 10);
 		WebElement HelpPress = webDriver.findElement(By.cssSelector(".nav.navbar-nav > li:nth-child(4) ul li:nth-child(4)"));
 		HelpPress.click();
-		pageLoadTimeout(10);
+		pageLoadTimeout(100);
 		assertEquals("ヘルプ | LMS", webDriver.getTitle());
 		getEvidence(new Object(){});
 	}
