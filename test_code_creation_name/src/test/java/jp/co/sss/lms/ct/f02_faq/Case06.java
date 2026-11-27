@@ -91,6 +91,7 @@ public class Case06 {
 		WebElement CategoryPress = webDriver.findElement(By.cssSelector("#main > div.well.bs-component > fieldset > ul:nth-of-type(2) > li > a"));
 		CategoryPress.click();
 		pageLoadTimeout(100);
+		scrollBy("1000");
 		WebElement SearchAnswer1 = webDriver.findElement(By.cssSelector("#question-h0 > dt > span:nth-child(2)"));
 		WebElement SearchAnswer2 = webDriver.findElement(By.cssSelector("#question-h1 > dt > span:nth-child(2)"));
 		WebElement SearchAnswer3 = webDriver.findElement(By.cssSelector("#question-h2 > dt > span:nth-child(2)"));
@@ -104,7 +105,6 @@ public class Case06 {
 	@Order(6)
 	@DisplayName("テスト06 検索結果の質問をクリックしその回答を表示")
 	void test06() {
-		scrollBy("1000");
 		WebElement CategoryAnswer = webDriver.findElement(By.cssSelector("#question-h0 > dt"));
 		CategoryAnswer.click();
 		visibilityTimeout(By.cssSelector("#question-h0 > dd > span:nth-child(2)"), 10);
